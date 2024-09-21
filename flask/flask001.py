@@ -12,7 +12,8 @@ def hello_world():
 
 # this is a second route() decorator, if the method parameter is not defined it will consider
 # by default as a get method
-@app.route('/greet', methods=['GET'])
+
+@app.route('/greetnice', methods=['GET'])
 def greet():
     # Get the 'name' parameter from the query string
     name = request.args.get('name', 'World')  # Default to 'World' if no name is provided
