@@ -21,7 +21,7 @@ def greet():
     # Return a greeting message as a JSON response, the jsonify will make the response in json format
     return jsonify(message=f"Hello, {name}!")
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submitgood', methods=['POST'])
 def submit():
     # Get data from the POST request
     data = request.get_json()  # Assume the client is sending JSON data
