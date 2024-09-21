@@ -6,10 +6,9 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # use the route() decorator to tell flask what url shall triger the below function
-@app.route("/hello")
+@app.route("/helloworld")
 def hello_world():
     return "<p>Hello, World!</p>"
-
 
 # this is a second route() decorator, if the method parameter is not defined it will consider
 # by default as a get method
